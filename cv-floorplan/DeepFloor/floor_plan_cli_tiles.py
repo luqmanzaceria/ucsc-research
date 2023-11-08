@@ -75,7 +75,7 @@ def main():
     parser.add_argument('output_folder', help='Path to the folder where output images will be saved.')
     args = parser.parse_args()
 
-    path_weights = "C:\\Users\\zacer\\Luqman\\dev\\cv\\cv-research\\deepfloorplan_code\\deepfloor\\pretrained\\G"
+    path_weights = "/Users/luq/dev/projects/ucsc-research/cv-floorplan/DeepFloor/deepfloor/pretrained/G"
     model = init_model(path_weights=path_weights)
 
     tile_size = 256
