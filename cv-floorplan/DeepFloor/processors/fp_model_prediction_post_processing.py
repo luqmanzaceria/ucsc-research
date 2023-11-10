@@ -38,7 +38,21 @@ def process_img(file_name,intermediate_file_name, model):
     # reshape it
     room_type = np.squeeze(room_type)
     room_boundary = np.squeeze(room_boundary)
+    
+    # Display room_type image
+    plt.figure(figsize=(8, 8))  # Set the figure size as desired
+    plt.imshow(room_type, cmap='gray')  # Assuming room_type is grayscale
+    plt.title('Room Type')
+    plt.axis('off')  # Hide the axis
+    plt.show()  # Show the image
 
+    # Display room_boundary image
+    plt.figure(figsize=(8, 8))  # Set the figure size as desired
+    plt.imshow(room_boundary, cmap='gray')  # Assuming room_boundary is grayscale
+    plt.title('Room Boundary')
+    plt.axis('off')  # Hide the axis
+    plt.show()  # Show the image
+    
     # merge results
     floorplan = room_type.copy()
     floorplan[room_boundary == 1] = 9  # door & window, turning pink
