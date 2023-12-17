@@ -1,6 +1,6 @@
 ## Usage
 
-To use floorplan_tiles script, please first download the pretrained model and place in pretrained folder, instructions below.
+To use floorplan_tiles script, please first download the [pretrained model](https://github.com/zlzeng/DeepFloorplan) and place in pretrained folder, instructions below.
 Then, run
 
 ```bash
