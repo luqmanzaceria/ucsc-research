@@ -15,7 +15,7 @@ The above DeepFloor's image recognition model originates from the code in this [
 A script that uses Keras OCR and Computer Vision to remove text from floorplans for initial processing.
 
 ## RBG Research
-A low-level image processing approach to wall extraction
+A low-level image processing approach to wall extraction derived from this [repository](https://github.com/rbg-research/Floor-Plan-Detection/).
 ![RBG Research Output Image](https://github.com/luqmanzaceria/ucsc-research/blob/main/cv-floorplan/RBG_E2_3.png)
 
 ## SVG to CSV
