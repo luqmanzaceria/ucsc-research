@@ -18,5 +18,8 @@ A script that uses Keras OCR and Computer Vision to remove text from floorplans 
 A low-level image processing approach to wall extraction derived from this [repository](https://github.com/rbg-research/Floor-Plan-Detection/).
 ![RBG Research Output Image](https://github.com/luqmanzaceria/ucsc-research/blob/main/cv-floorplan/RBG_E2_3.png)
 
-## SVG to CSV
-A script to convert SVG to CSV of coordinates and another script to visualize this CSV of coordinates with Matplotlib.
+## SVG2CSV
+Scripts to convert SVG to CSV of coordinates and another script to visualize this CSV of coordinates with Matplotlib.
+
+## contours.py
+A script to find contours of an image and generate coordinates of the contours
