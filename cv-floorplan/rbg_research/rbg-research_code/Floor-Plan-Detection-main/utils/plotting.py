@@ -607,6 +607,7 @@ def discrete_cmap():
     cpool = ['#DCDCDC', '#8dd3c7', '#b15928', '#fdb462', '#ffff99',
              '#fccde5', '#80b1d3', '#808080', '#fb8072', '#696969',
              '#577a4d']
+    cm.unregister_cmap('rooms_furu')
     cmap3 = colors.ListedColormap(cpool, 'rooms_furu')
     cm.register_cmap(cmap=cmap3)
 
