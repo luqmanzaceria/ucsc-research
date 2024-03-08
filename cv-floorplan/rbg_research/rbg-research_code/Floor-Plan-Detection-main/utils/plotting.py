@@ -587,12 +587,14 @@ def discrete_cmap():
     cpool = ['#DCDCDC', '#b3de69', '#000000', '#8dd3c7', '#fdb462',
              '#fccde5', '#80b1d3', '#808080', '#fb8072', '#696969',
              '#577a4d', '#ffffb3']
+    cm.unregister_cmap('rooms')
     cmap3 = colors.ListedColormap(cpool, 'rooms')
     cm.register_cmap(cmap=cmap3)
 
     cpool = ['#DCDCDC', '#8dd3c7', '#b15928', '#fdb462', '#ffff99',
              '#fccde5', '#80b1d3', '#808080', '#fb8072', '#696969',
              '#577a4d']
+    cm.unregister_cmap('icons')
     cmap3 = colors.ListedColormap(cpool, 'icons')
     cm.register_cmap(cmap=cmap3)
 
@@ -601,12 +603,14 @@ def discrete_cmap():
     cpool = ['#DCDCDC', '#b3de69', '#000000', '#8dd3c7', '#fdb462',
              '#fccde5', '#80b1d3', '#808080', '#fb8072', '#696969',
              '#577a4d', '#ffffb3', 'd3d5d7']
+    cm.unregister_cmap('rooms_furu')
     cmap3 = colors.ListedColormap(cpool, 'rooms_furu')
     cm.register_cmap(cmap=cmap3)
 
     cpool = ['#DCDCDC', '#8dd3c7', '#b15928', '#fdb462', '#ffff99',
              '#fccde5', '#80b1d3', '#808080', '#fb8072', '#696969',
              '#577a4d']
+    cm.unregister_cmap('rooms_furu')
     cmap3 = colors.ListedColormap(cpool, 'rooms_furu')
     cm.register_cmap(cmap=cmap3)
 

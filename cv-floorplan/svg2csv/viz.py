@@ -35,5 +35,5 @@ def draw_segments(planes):
     plt.show()
 
 if __name__ == "__main__":
-    floorplan = load_map_csv("./new_reassembled_E2_3.csv")
+    floorplan = load_map_csv("../line_segments.csv")
     draw_segments(floorplan)

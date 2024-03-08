@@ -128,11 +128,16 @@ def mark_outside_black(img, mask):
     """
     # Mark the outside of the house as black
     contours, _ = cv2.findContours(~img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    contour_sizes = [(cv2.contourArea(contour), contour) for contour in contours]
-    biggest_contour = max(contour_sizes, key=lambda x: x[0])[1]
-    mask = np.zeros_like(mask)
-    cv2.fillPoly(mask, [biggest_contour], 255)
-    img[mask == 0] = 0
+    if contours:  # Check if there are any contours
+        contour_sizes = [(cv2.contourArea(contour), contour) for contour in contours]
+        biggest_contour = max(contour_sizes, key=lambda x: x[0])[1]
+        mask = np.zeros_like(mask)
+        cv2.fillPoly(mask, [biggest_contour], 255)
+        img[mask == 0] = 0
+    else:
+        # Handle the case where no contours are found
+        # For now, we'll just pass, but you might want to do something else here
+        pass
     return img, mask
 
 

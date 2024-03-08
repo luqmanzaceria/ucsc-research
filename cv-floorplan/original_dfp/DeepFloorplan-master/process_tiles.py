@@ -17,20 +17,22 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--im_path', type=str, default='./demo/E2_2.png',
                     help='input image paths.')
 
-# color map
+# colored map
 # floorplan_map = {
-# 	0: [255,255,255], # background
-# 	1: [192,192,224], # closet
-# 	2: [192,255,255], # batchroom/washroom
-# 	3: [224,255,192], # livingroom/kitchen/dining room
-# 	4: [255,224,128], # bedroom
-# 	5: [255,160, 96], # hall
-# 	6: [255,224,224], # balcony
+# 	0: [255,255,255], # background: white
+# 	1: [192,192,224], # closet: purple
+# 	2: [192,255,255], # batchroom/washroom: light blue
+# 	3: [224,255,192], # livingroom/kitchen/dining room: light green
+# 	4: [255,224,128], # bedroom: yellow
+# 	5: [255,160, 96], # hall: orange
+# 	6: [255,224,224], # balcony: light pink
 # 	7: [255,255,255], # not used
 # 	8: [255,255,255], # not used
-# 	9: [255, 60,128], # door & window
-# 	10:[  0,  0,  0]  # wall
+# 	9: [255, 60,128], # door & window: bright pink
+# 	10:[  0,  0,  0]  # wall: black
 # }
+
+# binary map
 floorplan_map = {
 	0: [255,255,255], # background
 	1: [255,255,255], # closet
@@ -44,6 +46,24 @@ floorplan_map = {
 	9: [255,255,255], # door & window
 	10:[  0,  0,  0]  # wall
 }
+
+####### DOORS AND WINDOWS ########
+
+# floorplan_map = {
+# 	0: [255,255,255], # background: white
+# 	1: [255,255,255], # closet: purple
+# 	2: [255,255,255], # batchroom/washroom: light blue
+# 	3: [255,255,255], # livingroom/kitchen/dining room: light green
+# 	4: [255,255,255], # bedroom: yellow
+# 	5: [255,255,255], # hall: orange
+# 	6: [255,255,255], # balcony: light pink
+# 	7: [255,255,255], # not used
+# 	8: [255,255,255], # not used
+# 	9: [255, 60,128], # door & window: bright pink
+# 	10:[255,255,255]  # wall: black
+# }
+
+##################################
 
 def ind2rgb(ind_im, color_map=floorplan_map):
 	rgb_im = np.zeros((ind_im.shape[0], ind_im.shape[1], 3))
@@ -99,7 +119,7 @@ def process_image_file(im_path,intermediate_path):
 		plt.axis('off')
 		plt.savefig(intermediate_path, bbox_inches='tight', pad_inches=0)
 
-def process_imgNEWALG(im_path, intermediate_path, mode):
+def process_img(im_path, intermediate_path, mode):
 	print("demoNEWALG.py -->  process_imageNEWALG :  ")
 	print(im_path)
 	print(intermediate_path)
