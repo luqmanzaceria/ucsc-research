@@ -1,4 +1,4 @@
-# Computer Vision Wall Extraction From Floorplans
+# Computer Vision Wall Extraction and Floorplan Vectorization
 
 ## Original Image (Example):
 ![Original Unprocessed Floorplan Image](https://github.com/luqmanzaceria/ucsc-research/blob/main/cv-floorplan/E2_3.png)
