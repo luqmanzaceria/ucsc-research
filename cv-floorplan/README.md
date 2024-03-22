@@ -23,3 +23,7 @@ Scripts to convert SVG to CSV of coordinates and another script to visualize thi
 
 ## contours.py
 A script to find contours of an image and generate coordinates of the contours
+
+## SkeletonTrace
+Code for skeletonization/thinning of floorplan images
+![Skeletonization Image](https://github.com/luqmanzaceria/ucsc-research/blob/main/cv-floorplan/SkeletonTrace/skeletonization.png)
