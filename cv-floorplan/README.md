@@ -1,4 +1,4 @@
-# Computer Vision Wall Extraction From Floorplans
+# Computer Vision Wall Extraction and Floorplan Vectorization
 
 ## Original Image (Example):
 ![Original Unprocessed Floorplan Image](https://github.com/luqmanzaceria/ucsc-research/blob/main/cv-floorplan/E2_3.png)
@@ -23,3 +23,8 @@ Scripts to convert SVG to CSV of coordinates and another script to visualize thi
 
 ## contours.py
 A script to find contours of an image and generate coordinates of the contours
+
+## SkeletonTrace
+Code for skeletonization/thinning of floorplan images
+
+![Skeletonization Image](https://github.com/luqmanzaceria/ucsc-research/blob/main/cv-floorplan/SkeletonTrace/skeleton.png)
